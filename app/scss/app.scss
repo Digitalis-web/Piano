@@ -1,17 +1,113 @@
-//bootstrap css
-@import "https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css";
+.container{
+  position:absolute;
+  height: 100vh;
+  width:100vw;
+}
 
-//fonts
-@import url(https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900i);
+ul {
+  width: 25vw;
+  margin: 4vh auto 0;
+  &:after {
+    content: '';
+    height: 0;
+    display: block;
+    clear: both;
+  }
+}
 
-//variables mixin and other stuff
-@import "mixin";
-@import "variabels";
-@import "everything";
+li {
+  position: relative;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  cursor: pointer;
+  height: 5em;
+  width: 1em;
+  display: block;
+  float: left;
+  border: 1px solid black;
+  text-align: center;
+  border-radius: 0.2em 0.2em 0.2em 0.2em;
+  overflow: hidden;
+  z-index: 2;
+  transition: box-shadow 200ms;
+  .whit{
+    &:before{
+      background: #fff;
+    }
+  }
 
-//include pages
-@import "footer";
-@import "nav";
+  &:after {
+    content: ' ';
+    position: absolute;
+    z-index: 2;
+    height: 100%;
+    width: 100%;
+    display: block;
+  }
 
-//import scroll
-@import "skroll";
+  &:before {
+    content: ' ';
+    z-index: -69;
+    height: 100%;
+    width: 100%;
+    display: block;
+    position: absolute;
+  }
+}
+
+.black {
+  width: 0.7em;
+  background: #000;
+  height: 3em;
+  margin-left: -0.35em;
+  margin-right: -0.35em;
+  margin-top: -0.1em;
+  position: relative;
+  z-index: 5;
+}
+
+.black * {
+  font-size: 0.5em;
+  color: #fff;
+  margin-bottom: 0.3em;
+}
+
+.white * {
+  font-size: 0.7em;
+  margin-bottom: 0.3em;
+  color: #000;
+}
+
+.typed {
+  transition: all 300ms;
+}
+
+li:active, .typed {
+  transition: box-shadow 20ms;
+  position: relative;
+  z-index: 3;
+}
+
+[data-keycode='46'].text:after {
+  overflow: visible;
+  content: ' ';
+}
+
+[data-keycode='46']:after,
+[data-keycode='59']:after,
+[data-keycode='112']:after {
+  content: ' ';
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  display: block;
+  z-index: 2;
+}
+
+.clearfix:after {
+  content: '';
+  height: 0;
+  display: block;
+  clear: both;
+}
