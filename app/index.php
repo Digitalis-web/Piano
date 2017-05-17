@@ -7,8 +7,9 @@
 </head>
 <body>
 <html>
-<body class='clearfix'>
-<div class='container clearfix'>
+<body>
+<div class='piano'>
+
     <header>
         <audio id='F-2'>
             <source src='http://www.freesound.org/data/previews/117/117691_646701-lq.mp3' type='audio/mpeg'>
@@ -59,23 +60,28 @@
             Sorry, no support for the <code>audio</code> tag
         </audio>
     </header>
+
+    <div class="piano_container">
+
     <ul id='note-list'>
-        <li data-keycode= '106' id='F-2-player'>        </li>
-        <li data-keycode= '107' id='F-sharp-2-player'>  </li>
-        <li data-keycode= '108' id='G-2-player'>        </li>
-        <li data-keycode= '59'  id='G-sharp-2-player'>  </li>
-        <li data-keycode= '113' id='A-2-player'>        </li>
-        <li data-keycode= '119' id='A-sharp-2-player'>  </li>
-        <li data-keycode= '101' id='B-2-player'>        </li>
-        <li data-keycode= '114' id='C-2-player'>        </li>
-        <li data-keycode= '116' id='C-sharp-2-player'>  </li>
-        <li data-keycode= '121' id='D-2-player'>        </li>
-        <li data-keycode= '117' id='D-sharp-2-player'>  </li>
-        <li data-keycode= '105' id='E-3-player'>        </li>
+        <li class="white" data-keycode= '106' id='F-2-player'>        </li>
+        <li class="black" data-keycode= '107' id='F-sharp-2-player'>  </li>
+        <li class="white" data-keycode= '108' id='G-2-player'>        </li>
+        <li class="black" data-keycode= '59'  id='G-sharp-2-player'>  </li>
+        <li class="white" data-keycode= '113' id='A-2-player'>        </li>
+        <li class="black" data-keycode= '119' id='A-sharp-2-player'>  </li>
+        <li class="white" data-keycode= '101' id='B-2-player'>        </li>
+        <li class="black" data-keycode= '114' id='C-2-player'>        </li>
+        <li class="white" data-keycode= '116' id='C-sharp-2-player'>  </li>
+        <li class="black" data-keycode= '121' id='D-2-player'>        </li>
+        <li class="white" data-keycode= '117' id='D-sharp-2-player'>  </li>
+        <li class="black" data-keycode= '105' id='E-3-player'>        </li>
     </ul>
+
     <button class='clear-fix' id='switch-chars'>
         <div class='to-keys'></div>
     </button>
+    </div>
 </div>
 </body>
 </html>
