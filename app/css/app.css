@@ -1,19 +1,17 @@
 .piano {
   position: absolute;
-  background: #212734;
+  background: #2a2a2a;
   color: #fff;
-  width: 100vw;
   height: 100vh;
-  margin: 0;
-  padding: 0; }
+  width: 100vw;
+  left: 0;
+  top: 0; }
   .piano header {
     visibility: hidden; }
   .piano .piano_container ul {
     cursor: pointer;
     list-style-type: none;
     position: relative;
-    height: 50vh;
-    width: 100vw;
     padding: 0; }
     .piano .piano_container ul li {
       position: relative;
